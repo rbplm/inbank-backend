@@ -1,0 +1,32 @@
+
+
+The intern has structured the back-end well with packages for separate functionalities and divisions. Controller is organised and all responses are covered. Controller is well documented. Exceptions are handled for personal code verification. Constants are handled although magic numbers appear in credit modifier calculation function. 
+
+The DecisionEngine and Controller classes are tested.
+
+With regards to the mistakes I discovered.
+
+1) If minimum loan period is 12 months, the scale should be 12 to max, but is from 6 months to max.
+
+Fixed on front-end by changing slider min value.
+
+2) Maximum loan amount should be 10000 but was 3000.
+
+Fixed the constant.
+
+3) The algoritm the intern implemented did not take into account the loan amount and only outputs value that is larger than minimum loan amount.
+
+Fixed the algoritm.
+
+4) Enabled front-end dynamic display of new data from back-end.
+
+The user is shown the maximum loan amount they can have with the shortest period possible. If they are not eligible for an amount within the scale, this is shown as well.
+
+5) The DecisionEngine class was already a bit convoluted.
+
+I extracted methods into separate classes as I added methods into the DecionEngine class on my own as well.
+
+
+
+
+
